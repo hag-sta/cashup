@@ -87,6 +87,8 @@ footer a{margin-left:16px}
   .privacy ul{text-align:right}
   section{padding:56px 0}
   .split .txt{order:-1}
+  #phone .card{grid-template-columns:1fr !important}
+  #phone .card > div:last-child{display:none}
 }
 </style>
 
@@ -100,8 +102,8 @@ footer a{margin-left:16px}
         <span class="eyebrow">🌅 ניהול כסף בעברית – כמשחק</span>
         <h1>בונים עיר.<br>מגיעים ל<span>חופש כלכלי.</span></h1>
         <p class="lead">MoneyQuest עוזרת להבין לאן הולך הכסף, לחסוך יותר ולהתקדם צעד אחרי צעד לחופש כלכלי – דרך עיר קטנה שגדלה עם כל משימה פיננסית שאתם משלימים.</p>
-        <div class="cta-row"><a class="btn" href="app.html">התחילו עכשיו – בלי הרשמה</a><a class="btn ghost" href="#how">איך זה עובד?</a></div>
-        <div class="trust"><span>🔒 הנתונים נשארים במכשיר שלכם</span><span>⏱️ 10 דקות בחודש</span><span>📱 עובד בטלפון ובמחשב</span><span>👵 מצב פשוט לגיל השלישי</span></div>
+        <div class="cta-row"><a class="btn" href="app.html">פתחו את האפליקציה – בלי הורדה</a><a class="btn ghost" href="#how">איך זה עובד?</a></div>
+        <div class="trust"><span>🔒 הנתונים נשארים במכשיר שלכם</span><span>⏱️ 10 דקות בחודש</span><span>📱 נפתח מיד בטלפון – בלי חנות ובלי הורדה</span><span>👵 מצב פשוט לגיל השלישי</span></div>
       </div>
       <div class="phones">
         <div class="phone p1"><img src="img/shot-city.jpg" alt="מסך העיר באפליקציה"></div>
@@ -186,9 +188,30 @@ footer a{margin-left:16px}
   </div>
 </section>
 
+<section id="phone" style="padding-top:20px">
+  <div class="wrap">
+    <div class="card" style="display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center">
+      <div>
+        <h2 class="sec-title">📱 פותחים בטלפון – בלי להוריד כלום</h2>
+        <p style="color:var(--ink2);margin:0 0 6px">לוחצים על הקישור – והאפליקציה נפתחת מיד בדפדפן של הטלפון. בלי חנות אפליקציות, בלי הרשמה ובלי התקנה.</p>
+        <p style="margin:0 0 14px;font-weight:700;direction:ltr;text-align:right">hag-sta.github.io/moneyquest/app</p>
+        <div class="cta-row" style="margin:0">
+          <a class="btn" href="app.html">פתיחת האפליקציה</a>
+          <a class="btn small" style="background:#25D366;color:#fff;box-shadow:none" href="https://wa.me/?text=%D7%91%D7%95%D7%A0%D7%99%D7%9D%20%D7%A2%D7%99%D7%A8%20%D7%95%D7%9E%D7%92%D7%99%D7%A2%D7%99%D7%9D%20%D7%9C%D7%97%D7%95%D7%A4%D7%A9%20%D7%9B%D7%9C%D7%9B%D7%9C%D7%99%20%F0%9F%8C%85%20MoneyQuest%3A%20https%3A%2F%2Fhag-sta.github.io%2Fmoneyquest%2Fapp" target="_blank" rel="noopener">💬 שליחת הקישור בוואטסאפ</a>
+          <button class="btn small" style="background:#E3F1EE;color:#0F3D3E;box-shadow:none;border:0;cursor:pointer;font:inherit;font-weight:800" onclick="navigator.clipboard&&navigator.clipboard.writeText('https://hag-sta.github.io/moneyquest/app').then(()=>{this.textContent='✓ הקישור הועתק'})">🔗 העתקת קישור</button>
+        </div>
+        <details style="margin-top:16px;box-shadow:none;background:var(--bg)"><summary>רוצים אייקון במסך הבית? (לא חובה)</summary>
+          <p><b>אייפון:</b> פותחים את הקישור ב-Safari ← כפתור השיתוף ⬆️ ← "הוספה למסך הבית".<br><b>אנדרואיד:</b> פותחים ב-Chrome ← תפריט ⋮ ← "התקנת אפליקציה" או "הוספה למסך הבית".<br>מכאן והלאה האפליקציה נפתחת כמו כל אפליקציה – וגם בלי אינטרנט.</p></details>
+      </div>
+      <div style="font-size:5rem;line-height:1">📲</div>
+    </div>
+  </div>
+</section>
+
 <section id="faq">
   <div class="wrap" style="max-width:820px">
     <h2 class="sec-title center">שאלות נפוצות</h2>
+    <details><summary>צריך להוריד אפליקציה מהחנות?</summary><p>לא. לוחצים על הקישור והאפליקציה נפתחת מיד בטלפון. אם רוצים – אפשר להוסיף אייקון למסך הבית בשתי לחיצות.</p></details>
     <details><summary>צריך להירשם?</summary><p>לא. נכנסים ומתחילים. אין שם משתמש, אין סיסמה ואין מייל.</p></details>
     <details><summary>איפה נשמרים הנתונים שלי?</summary><p>רק בדפדפן במכשיר שבו אתם משתמשים. הם לא נשלחים אלינו ולא לשום גורם אחר. לכן כדאי לגבות מדי פעם (הגדרות ← גיבוי) – אם מוחקים את נתוני הדפדפן או מחליפים מכשיר, משחזרים מהקובץ.</p></details>
     <details><summary>אפשר להשתמש בכמה מכשירים?</summary><p>כן, בעזרת גיבוי ושחזור: מגבים במכשיר אחד ומשחזרים בשני. אין סנכרון אוטומטי – זה המחיר של פרטיות מלאה.</p></details>
